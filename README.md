@@ -18,12 +18,14 @@ A custom theme based on \_tw
 5. Add [Tailwind utility classes](https://tailwindcss.com/docs/utility-first) with abandon
 6. You don't have to use tailwindcss if you don't want to, feel free to follow the next step. 
 7. Add any custom css you need in custom.css it'll be outputted into theme/app.css which wordpress will then use. 
-8. All custom javascript is bundled with esbuild and ends up in theme/js/script.min.js to be used by wordpress. you can feel free to download any necessary libraries you need just make sure it goes through the bundler. Take a look at the script.js file within the javascript directory to see it in action. 
+8. All custom javascript is bundled with esbuild and ends up in theme/js/script.min.js to be used by wordpress. you can feel free to download any necessary libraries you need just make sure it goes through the bundler. Take a look at the script.js file within the javascript directory to see it in action
 
 ### Deployment
 
-9. Run `npm run bundle`
-10. unzip the theme, add the following to the top of style.css or else uploading the theme wont work.
+
+9. Export your ACF into json if you made any field changes or additions to it. 
+10. Run `npm run bundle`
+11. unzip the theme, add the following to the top of style.css or else uploading the theme wont work.
     `/*
     Theme Name: NorthstarMLS
     Theme URI:
@@ -32,8 +34,8 @@ A custom theme based on \_tw
     Description: Wordpress Theme
     Version: 1.0
     */`
-11. rezip the theme.
-12. Upload the resulting zip file to the site using the “Upload Theme” button on the “Add Themes” administration page
+12. rezip the theme.
+13. Upload the resulting zip file to the site using the “Upload Theme” button on the “Add Themes” administration page
 
 <!-- Or [deploy with the tool of your choice](https://underscoretw.com/docs/deployment/#h-other-deployment-options)! 
 
