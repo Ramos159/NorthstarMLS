@@ -34,7 +34,7 @@ A custom theme based on \_tw
 11. rezip the theme.
 12. Upload the resulting zip file to your site using the “Upload Theme” button on the “Add Themes” administration page
 
-Or [deploy with the tool of your choice](https://underscoretw.com/docs/deployment/#h-other-deployment-options)!
+<!-- Or [deploy with the tool of your choice](https://underscoretw.com/docs/deployment/#h-other-deployment-options)! 
 
 ## Full Documentation
 
@@ -66,3 +66,4 @@ Or [deploy with the tool of your choice](https://underscoretw.com/docs/deploymen
   Learn strategies for using Tailwind in theme-specific custom blocks
 * [Setting Up Browsersync](https://underscoretw.com/docs/browsersync/)  
   Add live reloads and synchronized cross-device testing to your workflow
+  -->
