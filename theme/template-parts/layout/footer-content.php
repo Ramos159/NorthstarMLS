@@ -80,26 +80,4 @@
 		<p><span>Copyright © <?php echo date("Y");?> NorthstarMLS</span></p>
 		<p><a href="https://google.com">Release Notes</a></p>
 	</div>
-	<style>
-		.footer-menu-logo {
-			width:268px;
-			height: 46px;
-			background-size: contain;
-			background-image: url('<?php echo get_template_directory_uri() . '/public/NorthstarMLS.png';?>');
-			margin-right: auto;
-			background-repeat: no-repeat;
-			margin-left: 0px;
-		}
-		#colophon { 
-			background-image: url(<?php echo get_template_directory_uri() . '/public/Footer.svg';?>);
-			background-size: contain:
-			backgroud-repeat: no-repeat;
-		}
-		.footer-menu > .menu-item {
-			padding-bottom: 16px;
-		}
-		@media (min-width: 1024px) {
-
-		}
-	</style>
 </footer><!-- #colophon -->

@@ -15,11 +15,14 @@ A custom theme based on \_tw
 
 4. Run `npm run watch`
 5. Add [Tailwind utility classes](https://tailwindcss.com/docs/utility-first) with abandon
+8. You don't have to use tailwindcss if you don't want to, feel free to follow the next step. 
+6. Add any custom css you need in custom.css it'll be outputted into theme/app.css which wordpress will then use. 
+7. All custom javascript is bundled with esbuild and ends up in theme/js/script.min.js to be used by wordpress. you can feel free to download any necessary libraries you need just make sure it goes through the bundler. Take a look at the script.js file within the javascript directory to see it in action. 
 
 ### Deployment
 
-6. Run `npm run bundle`
-7. unzip the theme, add the following to the top of style.css or else uploading the theme wont work.
+8. Run `npm run bundle`
+9. unzip the theme, add the following to the top of style.css or else uploading the theme wont work.
     `/*
     Theme Name: NorthstarMLS
     Theme URI:
@@ -28,8 +31,8 @@ A custom theme based on \_tw
     Description: Wordpress Theme
     Version: 1.0
     */`
-8. rezip the theme.
-7. Upload the resulting zip file to your site using the “Upload Theme” button on the “Add Themes” administration page
+10. rezip the theme.
+11. Upload the resulting zip file to your site using the “Upload Theme” button on the “Add Themes” administration page
 
 Or [deploy with the tool of your choice](https://underscoretw.com/docs/deployment/#h-other-deployment-options)!
 

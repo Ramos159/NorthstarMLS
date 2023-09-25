@@ -38,7 +38,8 @@ if ( ! defined( 'NORTHSTARMLS_TYPOGRAPHY_CLASSES' ) ) {
 	 */
 	define(
 		'NORTHSTARMLS_TYPOGRAPHY_CLASSES',
-		'prose prose-neutral max-w-none prose-a:text-primary'
+		''
+		// 'prose prose-neutral max-w-none prose-a:text-primary'
 	);
 }
 
@@ -93,8 +94,8 @@ if ( ! function_exists( 'northstarmls_setup' ) ) :
 			'html5',
 			array(
 				'search-form',
-				'comment-form',
-				'comment-list',
+				// 'comment-form',
+				// 'comment-list',
 				'gallery',
 				'caption',
 				'style',
@@ -145,11 +146,13 @@ add_action( 'widgets_init', 'northstarmls_widgets_init' );
  */
 function northstarmls_scripts() {
 	wp_enqueue_style( 'northstarmls-style', get_stylesheet_uri(), array(), NORTHSTARMLS_VERSION );
+	wp_enqueue_style('northstarmls-custom-style', get_template_directory_uri() . '/app.css', array(), NORTHSTARMLS_VERSION );
+	// wp_enqueue_style('slider js styles','https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css', array());
 	wp_enqueue_script( 'northstarmls-script', get_template_directory_uri() . '/js/script.min.js', array(), NORTHSTARMLS_VERSION, true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+	// 	wp_enqueue_script( 'comment-reply' );
+	// }
 }
 add_action( 'wp_enqueue_scripts', 'northstarmls_scripts' );
 
@@ -213,3 +216,7 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+function remove_textarea() {
+        remove_post_type_support( 'page', 'editor' );
+}

@@ -22,7 +22,7 @@ module.exports = {
 							maxWidth: false,
 							p: {
 								color: '#6F7078',
-								fontSize: '20px',
+								fontSize: '16px',
 								fontFamily: 'Neo Sans Pro'
 							},
 							h2: {
