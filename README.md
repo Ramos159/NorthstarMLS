@@ -10,6 +10,7 @@ A custom theme based on \_tw
 1. Move this folder to `wp-content/themes` in your local development environment
 2. Run `npm install && npm run dev` in this folder
 3. Activate this theme in WordPress
+4. Import the acf-export file into acf to get current available settings.
 
 ### Development
 
