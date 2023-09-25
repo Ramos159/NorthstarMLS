@@ -32,7 +32,7 @@ A custom theme based on \_tw
     Version: 1.0
     */`
 11. rezip the theme.
-12. Upload the resulting zip file to your site using the “Upload Theme” button on the “Add Themes” administration page
+12. Upload the resulting zip file to the site using the “Upload Theme” button on the “Add Themes” administration page
 
 <!-- Or [deploy with the tool of your choice](https://underscoretw.com/docs/deployment/#h-other-deployment-options)! 
 
