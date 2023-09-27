@@ -224,13 +224,13 @@
     }
 
     #open-mobile-site-menu {
-        height: 30px;
-        width: 30px;
+        min-height: 30px;
+        min-width: 30px;
     }
 
     #close-mobile-site-menu {
-        height: 30px;
-        width: 30px;
+        min-height: 30px;
+        min-width: 30px;
     }
 }
 

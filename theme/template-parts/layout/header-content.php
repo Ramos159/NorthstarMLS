@@ -22,7 +22,7 @@
 		?>
 	</nav>
 	<div class="flex pr-6 md:pr-14 lg:pr-20 xl:pr-36 py-4">
-		<div class="pr-16">
+		<div class="md:pr-16">
 			<div class="menu-logo ml-8 lg:ml-16 xl:ml-28"></div>
 		</div>
 		<nav id="main-site-navigation" class="flex flex-row-reverse w-full" aria-label="<?php esc_attr_e( 'Main Navigation', 'northstarmls' ); ?>">
