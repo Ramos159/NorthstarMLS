@@ -4,12 +4,11 @@
     $bg = $args['bg_image'];
     $enable_button =$args['cta_button'];
     $cta_url = $args['cta_url'];
-    $cta_icon = $args['cta_icon'];
-    $cta_text = $args['cta_text'];
+    $cta_icon = $args['cta_icon']; 
 ?>
 
 <section>
-    <div data-animation="animate__fadeIn" class="md:h-96 opacity-0 px-4 md:px-20 text-center pb-6 pt-4 md:pt-20" <?php if($bg): ?> style="background-image: url(<?php echo $bg['url']?>); background-contain: cover;" <?php endif; ?>>
+    <div data-animation="animate__fadeIn" class="md:h-96 opacity-0 px-4 md:px-20 text-center pb-6 pt-4 md:pt-20" <?php if($bg): ?> style="background-image: url(<?php echo $bg['url']?>); background-size: cover; background-size: round;" <?php endif; ?>>
         <h3 class="mt-0 text-2xl pb-4 text-brand-headline-blue font-neo-sans-pro-medium"><?php echo $title ?></h3>
         <div class="pb-6 text-brand-headline-blue">
             <?php echo $body ?>

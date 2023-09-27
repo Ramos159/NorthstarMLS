@@ -17,14 +17,35 @@ menuItems.forEach(item=>{
 const primaryMenu = document.querySelector('#primary-menu');
 const searchIconEntry = document.createElement('li');
 const searchIconDiv = document.createElement('div');
+const searchBar = document.querySelector('#desktop-search');
 searchIconDiv.classList.add('search-icon');
 
 searchIconEntry.append(searchIconDiv);
 primaryMenu.append(searchIconEntry);
 
-searchIconDiv.addEventListener('click',()=>{
-    console.log('add search thing here');
+document.addEventListener('click',function handleOutsideClick(event){ 
+
+    // ignore search icon
+    if(event.target.classList.contains('search-icon')){
+        return;
+    }
+
+    // if search bar doesn't have hidden class and the elements id isn't desktop-search
+    if(!searchBar.classList.contains('hidden') && event.target.id !== 'desktop-search'){
+        console.log('closing menu')
+        searchBar.classList.add('hidden');
+        primaryMenu.classList.add('md:flex');
+    }
+    // console.log(event.target.id !== 'desktop-search', !searchBar.classList.contains('hidden'));
 });
+
+searchIconDiv.addEventListener('click',()=>{
+    if(searchBar.classList.contains('hidden')){
+        primaryMenu.classList.remove('md:flex');
+        searchBar.classList.remove('hidden');
+    }
+});
+
 
 // mobile nav javascript
 const openMenu = document.querySelector('#open-mobile-site-menu');
@@ -82,4 +103,4 @@ mobileSubMenus.forEach((menu)=>{
 const afterNav = document.querySelector('#mobile-after-nav');
 const mobileNav = document.querySelector('#mobile-primary-menu');
 
-mobileNav.append(afterNav);
+mobileNav.append(afterNav);     

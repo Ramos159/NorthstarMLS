@@ -10,14 +10,14 @@
 ?>
 
 <footer id="colophon" class="lg:px-64 xl:px-[255px] pt-24 pb-8 font-neo-sans-pro">
-	<div class="text-center px-[25px] md:px-[50px]">
+	<div class="text-center px-[25px] md:px-[150px]">
 		<div>
-			<h2 class="text-brand-headline-blue text-3xl md:text-5xl pb-8"> Thank you from NorthstarMLS </h2>
-			<p class="pb-16 font-neo-sans-pro text-brand-body-gray md:text-2xl">Access your frontend and other tools. Capture data and use it to excel in your industry with NorthstarMLS</p>
+			<h2 class="text-brand-headline-blue text-[32px] pb-8 font-neo-sans-pro-medium"> Thank you from NorthstarMLS!</h2>
+			<p class="pb-16 font-neo-sans-pro text-brand-body-gray">Access your frontend and other tools. Capture data and use it to excel in your industry with NorthstarMLS</p>
 		</div>
 		<nav aria-label="<?php esc_attr_e( 'Footer Menu', 'northstarmls' ); ?>" class="block lg:flex pb-8 gap-16 justify-center">
 			<div class="mx-auto lg:ml-0 lg:mr-auto text-center w-48 text-brand-headline-blue pb-10 lg:pb-0">
-				<h3 class="underline underline-offset-[16px] decoration-brand-logo-blue pb-8 text-2xl font-neo-sans-pro-medium text-center">Company</h3>
+				<h3 class="underline underline-offset-[16px] decoration-brand-logo-blue pb-8 text-xl font-neo-sans-pro-medium text-center">Company</h3>
 				<?php
 					wp_nav_menu(
 						array(
@@ -30,7 +30,7 @@
 				?>
 			</div>
 			<div class="mx-auto lg:ml-0 lg:mr-auto text-left w-48 text-brand-headline-blue pb-10 lg:pb-0">
-				<h3 class="underline underline-offset-[16px] decoration-brand-logo-blue pb-8 text-2xl font-neo-sans-pro-medium text-center">Tools</h3>
+				<h3 class="underline underline-offset-[16px] decoration-brand-logo-blue pb-8 text-xl font-neo-sans-pro-medium text-center">Tools</h3>
 				<?php
 					wp_nav_menu(
 						array(
@@ -43,7 +43,7 @@
 				?>
 			</div>
 			<div class="mx-auto lg:ml-0 lg:mr-auto text-left w-48 text-brand-headline-blue lg:pb-0">
-				<h3 class="underline underline-offset-[16px] decoration-brand-logo-blue pb-8 text-2xl font-neo-sans-pro-medium text-center">Legal</h3>
+				<h3 class="underline underline-offset-[16px] decoration-brand-logo-blue pb-8 text-xl font-neo-sans-pro-medium text-center">Legal</h3>
 				<?php
 					wp_nav_menu(
 						array(
@@ -57,8 +57,8 @@
 			</div>
 		</nav>
 	</div>
-	<hr class="border border-t-[1px] border-slate-100">
-	<div class="pt-8 block lg:flex pb-8 px-[50px]">
+	<hr class="border-[1px] border-brand-headline-blue border-opacity-5">
+	<div class="pt-16 block lg:flex pb-8 lg:px-[160px]">
 		<div class="footer-menu-logo mx-auto md:ml-0 pb-20 lg:pb-0"></div>
 		<div class="flex flex-row-reverse text-brand-headline-blue text-center lg:text-right justify-center lg:justify-normal">
 			<ul>
