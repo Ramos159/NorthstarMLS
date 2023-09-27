@@ -10,7 +10,7 @@
 ?>
 
 <header id="masthead" class="block shadow-xl md:relative bg-white top-0 h-auto w-full">
-	<nav class="hidden md:flex flex-row-reverse border-b-[1px] font-neo-sans-pro-medium pr-14 lg:pr-20 xl:pr-36 text-xs">
+	<nav class="hidden md:flex flex-row-reverse border-b-[1px] font-neo-sans-pro-medium pr-14 lg:pr-20 xl:pr-36 text-xs py-2">
 		<?php
 			wp_nav_menu(
 				array(
@@ -22,8 +22,10 @@
 		?>
 	</nav>
 	<div class="flex pr-6 md:pr-14 lg:pr-20 xl:pr-36 py-4">
-		<div class="menu-logo ml-8 lg:ml-16 xl:ml-28"></div>
-		<nav id="main-site-navigation" class="flex flex-row-reverse" aria-label="<?php esc_attr_e( 'Main Navigation', 'northstarmls' ); ?>">
+		<div class="pr-16">
+			<div class="menu-logo ml-8 lg:ml-16 xl:ml-28"></div>
+		</div>
+		<nav id="main-site-navigation" class="flex flex-row-reverse w-full" aria-label="<?php esc_attr_e( 'Main Navigation', 'northstarmls' ); ?>">
 			<?php
 			wp_nav_menu(
 				array(
@@ -35,6 +37,16 @@
 				)
 			);
 			?>
+			<div id="desktop-search" class="hidden w-full">
+				<div class="border border-brand-logo-blue rounded-2xl flex gap-3 text-base p-2">
+					<div class="h-6 w-6 self-center"><img src="<?php echo get_template_directory_uri() . '/public/search.png'?>"></img></div>
+					<label for="desktop-search"></label>
+					<input class="outline-none align-middle w-full" type="text" id="desktop-search" name="search"></input>
+					<button class="text-white bg-brand-headline-blue px-4 rounded-lg text-sm">
+						Search
+					</button>
+				</div>
+			</div>		
 		</nav>
 		<div id="open-mobile-site-menu" class="relative inline-block md:hidden"></div>
 		<div id="close-mobile-site-menu" class="relative hidden md:hidden"></div>
@@ -68,8 +80,8 @@
 			<div class="px-8 py-8">
 				<div class="border-2 rounded-3xl flex gap-3 text-base">
 					<button class="h-10 w-6"><img src="<?php echo get_template_directory_uri() . '/public/search.png'?>"></img></button>
-					<label for="search"></label>
-					<input type="text" id="search" name="search" placeholder="Search NorthstarMLS..."></input>
+					<label for="mobile-search"></label>
+					<input type="text" id="mobile-search" name="mobile-search" placeholder="Search NorthstarMLS..."></input>
 				</div>
 			</div>
 		</div>

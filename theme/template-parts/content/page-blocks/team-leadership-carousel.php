@@ -1,10 +1,3 @@
-<?php
-    //todo: leadership carousel
-    $people = get_field('team_members','options');
-                        // $name = $person['name_position'];
-                    // $bio = $person['bio'];
-                    // $headshot = $person['headshot'];
-?>
 <section>
     <div class="min-h-[834px] md:max-xl:min-h-[950px] lg:min-h-[528px]">
         <div data-animation="animate__fadeIn" class="opacity-0 swiper team-leadership-carousel overflow-hidden h-full w-full pb-16">
