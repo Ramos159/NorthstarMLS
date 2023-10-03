@@ -15,7 +15,8 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			'neo-sans-pro': ['NeoSansProRegular','sans-serif'],
-			// 'open-sans' : ['Open Sans', 'sans-serif'],
+			'open-sans' : ['OpenSansRegular', 'sans-serif'],
+			'open-sans-medium' : ['OpenSansMedium', 'sans-serif'],
 			'neo-sans-pro-medium' : ['NeoSansProMedium', 'sans-serif'],
 			'neo-sans-pro-bold' : ['NeoSansProBold','sans-serif']
 		},

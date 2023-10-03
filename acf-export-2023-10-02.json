@@ -251,6 +251,90 @@
                         "min": "",
                         "max": ""
                     },
+                    "layout_65171ca6544a1": {
+                        "key": "layout_65171ca6544a1",
+                        "name": "testimonials_block",
+                        "label": "Testimonials Block",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_65171cbc544a3",
+                                "label": "Testimonials",
+                                "name": "testimonials",
+                                "aria-label": "",
+                                "type": "repeater",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "table",
+                                "min": 0,
+                                "max": 0,
+                                "collapsed": "",
+                                "button_label": "Add Row",
+                                "rows_per_page": 20,
+                                "sub_fields": [
+                                    {
+                                        "key": "field_65171cd8544a4",
+                                        "label": "Testimony",
+                                        "name": "testimony",
+                                        "aria-label": "",
+                                        "type": "textarea",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "maxlength": "",
+                                        "rows": "",
+                                        "placeholder": "",
+                                        "new_lines": "",
+                                        "parent_repeater": "field_65171cbc544a3"
+                                    },
+                                    {
+                                        "key": "field_65171ceb544a5",
+                                        "label": "Name",
+                                        "name": "name",
+                                        "aria-label": "",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "maxlength": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "parent_repeater": "field_65171cbc544a3"
+                                    }
+                                ]
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_6515b00fc5425": {
+                        "key": "layout_6515b00fc5425",
+                        "name": "partners_carousel",
+                        "label": "Partners Carousel",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
                     "layout_65138f7bbce83": {
                         "key": "layout_65138f7bbce83",
                         "name": "third_party_vendors_block",
@@ -941,6 +1025,148 @@
         "show_in_rest": 0
     },
     {
+        "key": "group_65159cf29c1f0",
+        "title": "Partners fields",
+        "fields": [
+            {
+                "key": "field_65159cf2000f1",
+                "label": "Partners",
+                "name": "partners",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_65159d07000f2",
+                        "label": "Name",
+                        "name": "name",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_65159cf2000f1"
+                    },
+                    {
+                        "key": "field_6515aac2786ab",
+                        "label": "Url",
+                        "name": "url",
+                        "aria-label": "",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "parent_repeater": "field_65159cf2000f1"
+                    },
+                    {
+                        "key": "field_65159d12000f3",
+                        "label": "Picture",
+                        "name": "picture",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "preview_size": "medium",
+                        "parent_repeater": "field_65159cf2000f1"
+                    },
+                    {
+                        "key": "field_65159d1d000f4",
+                        "label": "Ribbon?",
+                        "name": "ribbon",
+                        "aria-label": "",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "none": "None",
+                            "shareholder": "Shareholder",
+                            "customer-association": "Customer Association",
+                            "common-data-partner": "Common Data Platform"
+                        },
+                        "default_value": false,
+                        "return_format": "value",
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "parent_repeater": "field_65159cf2000f1"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "partners"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
         "key": "group_6501f26335445",
         "title": "Post Fields",
         "fields": [
@@ -1325,6 +1551,27 @@
         "menu_order": 0,
         "page_title": "Board Members",
         "menu_slug": "board-members",
+        "parent_slug": "none",
+        "advanced_configuration": 0,
+        "icon_url": "",
+        "menu_title": "",
+        "position": "",
+        "redirect": 0,
+        "description": "",
+        "update_button": "Update",
+        "updated_message": "Options Updated",
+        "capability": "edit_posts",
+        "data_storage": "options",
+        "post_id": "",
+        "autoload": 0
+    },
+    {
+        "key": "ui_options_page_65159cda2afaf",
+        "title": "Partners",
+        "active": true,
+        "menu_order": 0,
+        "page_title": "Partners",
+        "menu_slug": "partners",
         "parent_slug": "none",
         "advanced_configuration": 0,
         "icon_url": "",
