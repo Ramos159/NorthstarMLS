@@ -1,0 +1,45 @@
+{
+    "key": "group_6501f26335445",
+    "title": "Post Fields",
+    "fields": [
+        {
+            "key": "field_6509b66fdd021",
+            "label": "Post Blurb",
+            "name": "post_blurb",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Text that appears just below the title in the Hero. This will be wrapped in a p tag, so please keep it to text only.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1696306491
+}
