@@ -15,7 +15,7 @@
 			<div class="md:w-1/2 lg:min-w-[40%] shadow-xl h-[225px] md:h-[352px] md:mr-0 md:ml-auto rounded-3xl md:rounded-none md:rounded-l-3xl md:max-w-[619px] mb-8 md:mb-0 bg-cover bg-no-repeat bg-center"style="background-image: url('<?php echo get_the_post_thumbnail_url();?>');"></div>
 		<?php else: ?>
 			<div data-animation="animate__fadeInRight" class="h-[225px] md:h-[352px] opacity-0 bg-white shadow-xl md:mr-0 md:ml-auto rounded-3xl md:rounded-none md:rounded-l-3xl md:min-w-[619px] mb-8 md:mb-0 px-4 py-6">
-				<div class="shadow-xl h-[225px] md:h-[300px] md:mr-0 md:ml-auto rounded-3xl md:rounded-none md:rounded-l-3xl md:max-w-[619px] mb-8 md:mb-0 bg-cover bg-no-repeat bg-center"style="background-image: url('<?php echo get_the_post_thumbnail_url();?>');"></div>
+				<div class="h-[225px] md:h-[300px] md:mr-0 md:ml-auto md:max-w-[619px] mb-8 md:mb-0 bg-contain bg-no-repeat bg-center"style="background-image: url('<?php echo get_the_post_thumbnail_url();?>');"></div>
 			</div>
 		<?php endif; ?>
 			<div class="md:w-1/2 lg:min-w-[60%] pb-4 md:pb-0 md:pl-20 md:pr-4">
