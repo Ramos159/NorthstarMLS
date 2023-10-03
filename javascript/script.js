@@ -12,4 +12,8 @@
 import './nav.js';
 import './animations.js';
 import './image-content-carousel.js';
-import './team-leadership-carousel.js'
+import './team-leadership-carousel.js';
+import './testimonial-carousel.js';
+import './multitab-block.js';
+
+

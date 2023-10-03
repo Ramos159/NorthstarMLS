@@ -148,7 +148,7 @@ function northstarmls_scripts() {
 	wp_enqueue_style( 'northstarmls-style', get_stylesheet_uri(), array(), NORTHSTARMLS_VERSION );
 	wp_enqueue_style('northstarmls-custom-style', get_template_directory_uri() . '/app.css', array(), NORTHSTARMLS_VERSION );
 	// wp_enqueue_style('slider js styles','https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css', array());
-	wp_enqueue_script( 'northstarmls-script', get_template_directory_uri() . '/js/script.min.js', array(), NORTHSTARMLS_VERSION, true );
+	wp_enqueue_script( 'northstarmls-script', get_template_directory_uri() . '/js/script.min.js', array('jquery'), NORTHSTARMLS_VERSION, true );
 
 	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 	// 	wp_enqueue_script( 'comment-reply' );
