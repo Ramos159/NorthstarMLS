@@ -64,3 +64,9 @@
     src: url("./fonts/Open_Sans/static/OpenSans-Regular.woff2");
 }
 
+@font-face {
+    font-family: OpenSansMedium;
+    src: url("./fonts/Open_Sans/static/OpenSans-Medium.woff");
+    src: url("./fonts/Open_Sans/static/OpenSans-Medium.woff2");
+}
+
